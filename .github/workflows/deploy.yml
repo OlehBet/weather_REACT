@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [main] # Спрацьовує, коли ти робиш пуш у гілку main
+    branches: [main, master] # спрацює на будь-яку з цих гілок
 
 permissions:
   contents: write
@@ -22,5 +22,5 @@ jobs:
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: build # Для Create React App це зазвичай 'build', для Vite - 'dist'
-          branch: gh-pages # Гілка, де буде жити готовий сайт
+          folder: build # якщо ти на Vite, зміни на dist
+          branch: gh-pages

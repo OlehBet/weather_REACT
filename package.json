@@ -1,6 +1,7 @@
 {
   "name": "react",
   "version": "1.0.0",
+  "homepage": "https://OlehBet.github.io/weather_REACT/",
   "description": "",
   "keywords": [],
   "main": "src/index.tsx",
